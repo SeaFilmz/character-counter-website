@@ -67,12 +67,9 @@ textarea {
   .slogan {
     font-size: 2rem;
   }
-  textarea {
-    width: 12.5rem;
-  }
 }
 
-@media screen and (max-width: 38.75rem) {
+@media screen and (max-width: 46.875rem) {
   main {
     display: block;
   }
