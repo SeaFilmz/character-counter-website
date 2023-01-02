@@ -9,7 +9,7 @@ body {
 .App-header {
   background-color: #282c34;
   min-height: 100%;
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
   padding-bottom: 0.1rem;
 }
@@ -19,6 +19,7 @@ h1 {
 }
 
 .slogan {
+  font-size: 3rem;
   margin-top: 0;
 }
 
@@ -60,16 +61,22 @@ textarea {
   margin-left: 1rem;
 }
 
-@media screen and (max-width: 56.25rem) {
+/*@media screen and (max-width: 56.25rem) {
   h1 {
     font-size: 4rem;
   }
   .slogan {
     font-size: 2rem;
   }
-}
+}*/
 
 @media screen and (max-width: 46.875rem) {
+  h1 {
+    font-size: 4rem;
+  }
+  .slogan {
+    font-size: 2rem;
+  }
   main {
     display: block;
   }
