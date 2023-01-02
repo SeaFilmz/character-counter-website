@@ -111,12 +111,17 @@ function Main() {
         <p id="vowels">Vowel Count: {vowelCount}</p>
         <p id="consonants">Consonant Count: {consonantCount}</p>
         <p>Digit Count: {digitCount}</p>
+        <div className="buttons">
+          <LowerCase />
+          <UpperCase />
+          <LightToDark />
+        </div>
       </div>
-      <div className="buttons">
+      {/*<div className="buttons">
         <LowerCase />
         <UpperCase />
         <LightToDark />
-      </div>
+      </div>*/}
       <p id="text"></p>
     </main>
   );

@@ -32,7 +32,13 @@ nav {
 }
 
 main {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /*margin-right: 0 auto;*/
+}
+
+.textField {
+  margin-right: 5rem;
 }
 
 textarea {
@@ -42,8 +48,8 @@ textarea {
 }
 
 .charCounter {
-  margin-top: 0.5rem;
-  text-align: center;
+  margin-top: 0.5rem 0;
+  text-align: left;
 }
 
 .lowerCaseButton {
@@ -63,6 +69,15 @@ textarea {
   }
   textarea {
     width: 12.5rem;
+  }
+}
+
+@media screen and (max-width: 38.75rem) {
+  main {
+    display: block;
+  }
+  .charCounter {
+    text-align: center;
   }
 }
 
