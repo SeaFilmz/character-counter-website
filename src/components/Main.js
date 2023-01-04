@@ -43,7 +43,7 @@ function digitCounter(charArray) {
   }
 }
 
-function Main() {
+function Main({ lightToDarkThemeChanger, setLightToDarkThemeChanger }) {
   const [count, setCount] = useState(0);
   const [countNoSpace, setCountNoSpace] = useState(0);
   const [wordCount, setWordCount] = useState(0);
@@ -114,7 +114,10 @@ function Main() {
         <div className="buttons">
           <LowerCase />
           <UpperCase />
-          <LightToDark />
+          <LightToDark
+            lightToDarkThemeChanger={lightToDarkThemeChanger}
+            setLightToDarkThemeChanger={setLightToDarkThemeChanger}
+          />
         </div>
       </div>
       {/*<div className="buttons">

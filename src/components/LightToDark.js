@@ -1,9 +1,13 @@
-function LightToDark() {
+function LightToDark({ lightToDarkThemeChanger, setLightToDarkThemeChanger }) {
   return (
     <button
       className="themeButton"
       onClick={() => {
-        console.log(document.querySelector("#char").style.backgroundColor);
+        const newTheme = lightToDarkThemeChanger === "" ? "dark" : "";
+
+        setLightToDarkThemeChanger(newTheme);
+
+        //console.log(document.querySelector("#char").style.backgroundColor);
         if (
           document.querySelector("#char").style.backgroundColor === "" ||
           document.querySelector("#char").style.backgroundColor === "white"
@@ -13,7 +17,6 @@ function LightToDark() {
           document.querySelector("main").style.backgroundColor = "black";
           document.querySelector("body").style.backgroundColor = "black";
           document.querySelector(".charCounter").style.color = "white";
-          document.querySelector(".themeButton").innerHTML = "Light Theme";
         } else if (
           document.querySelector("#char").style.backgroundColor ===
           "rgb(40, 44, 52)"
@@ -23,11 +26,10 @@ function LightToDark() {
           document.querySelector("main").style.backgroundColor = "#f0f0f0";
           document.querySelector("body").style.backgroundColor = "#f0f0f0";
           document.querySelector(".charCounter").style.color = "black";
-          document.querySelector(".themeButton").innerHTML = "Dark Theme";
         }
       }}
     >
-      Dark Theme
+      {lightToDarkThemeChanger === "" ? "Light" : "Dark"} Theme
     </button>
   );
 }
